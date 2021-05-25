@@ -12,10 +12,9 @@ public class Main {
 
     public static int[] selectionSort(int [] array) {
         for (int i = 0; i < array.length; i++) {
-            int minIndex = i;
             for (int j = i + 1; j < array.length; j++) {
-                if(array[j] < array[minIndex]) {
-                    swap(array, j, minIndex);
+                if(array[j] < array[i]) {
+                    swap(array, j, i);
                 }
             }
         }
