@@ -10,6 +10,7 @@ public class Main {
         String firstString = scanner.nextLine();
         System.out.println("Input second string: ");
         String secondString = scanner.nextLine();
+        System.out.println("If the second string contains the first one?");
         System.out.println(isContainsString(firstString, secondString));
     }
     
