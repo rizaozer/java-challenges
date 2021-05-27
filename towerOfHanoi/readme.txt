@@ -3,5 +3,5 @@ but you can't place a larger disk onto a smaller disk.
 
 Tower of Hanoi
 
-Create a function that takes a number discs as an argument and returns the minimum amount of steps needed to complete the game.
-
+Create a function that takes a number discs as an argument and returns the minimum amount
+of steps needed to complete the game.

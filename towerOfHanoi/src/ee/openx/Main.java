@@ -8,7 +8,7 @@ public class Main {
 
     public static void towerOfHanoi(int n, char firstRod, char secondRod, char auxRod) {
         if (n == 1) {
-            System.out.println("---Take disk 1 from rod " +  firstRod + " to rod " + secondRod);
+            System.out.println("Take disk 1 from rod " +  firstRod + " to rod " + secondRod);
             return;
         }
 
