@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         int[] numbersArray = {3, 7, 3, 1, -1, 1, 5, 6, 5};
-        
+
         System.out.println(countBomeranges(numbersArray));
     }
 
