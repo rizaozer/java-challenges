@@ -1,19 +1,20 @@
 package ee.openx;
 
 public class Main {
+    private static int counter = 0;
+
     public static void main(String args[]) {
-        int n = 5;
-        towerOfHanoi(n,'A','C', 'B');
+        System.out.println(towerOfHanoi(3));
     }
 
-    public static void towerOfHanoi(int n, char firstRod, char secondRod, char auxRod) {
+    private static int towerOfHanoi(int n) {
         if (n == 1) {
-            System.out.println("Take disk 1 from rod " +  firstRod + " to rod " + secondRod);
-            return;
+            counter++;
+        } else {
+            towerOfHanoi(n - 1);
+            counter++;
+            towerOfHanoi(n - 1);
         }
-
-        towerOfHanoi(n-1, firstRod, auxRod, secondRod);
-        System.out.println("Take disk " + n + " from rod " +  firstRod + " to rod " + secondRod);
-        towerOfHanoi(n-1, auxRod, secondRod, firstRod);
+        return counter;
     }
 }
