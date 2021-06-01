@@ -3,9 +3,6 @@ package ee.openx;
 public class IsContains6 {
     public static void main(String[] args) {
         // 1. Given an array of ints, compute if the array contains a 6.
-//        array6([1, 6, 4], 0) → true
-//        array6([1, 4], 0) → false
-//        array6([6], 0) → true
 
         int [] array1 = {1, 6, 4, 0};
         int [] array2 = {1, 4, 0};
