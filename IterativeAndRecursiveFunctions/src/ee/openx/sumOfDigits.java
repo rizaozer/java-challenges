@@ -4,6 +4,7 @@ public class sumOfDigits {
     public static void main(String[] args) {
         System.out.println(sumAllDigits_Iterative(123));
         System.out.println(sumAllDigits_Recursive(123));
+        System.out.println(sumAllDigits_Recursive2(123));
     }
 
     public static int sumAllDigits_Iterative(int number) {
@@ -25,5 +26,12 @@ public class sumOfDigits {
             sumAllDigits_Recursive(number / 10);
         }
         return sum;
+    }
+
+    public static int sumAllDigits_Recursive2(int number) {
+        if(number < 9) {
+            return number;
+        }
+            return sumAllDigits_Recursive2(number / 10) + sumAllDigits_Recursive2(number % 10);
     }
 }
