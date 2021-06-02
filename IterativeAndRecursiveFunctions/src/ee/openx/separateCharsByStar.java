@@ -12,6 +12,7 @@ public class separateCharsByStar {
 
         System.out.println("Recursion function: ");
         printStringArray(separateChars_Recursive("RizaOzer", "*", 0));
+        printStringArray(separateChars_Recursive2("RizaOzer", "*", 0));
     }
 
     public static String[] separateChars_Iterate(String originalText, String stringToBeInserted, int index) {
@@ -40,6 +41,20 @@ public class separateCharsByStar {
             }
         }
         return text;
+    }
+
+    // Test method
+    public static String separateChars_Recursive2(String originalText, String stringToBeInserted, int index) {
+        if (index == originalText.length()) {
+            return " ";
+        } else {
+            if(index < originalText.length() - 1) {
+                return separateChars_Recursive2(originalText, "*", index + 1) +
+                        originalText.substring(index, (index + 1)) + stringToBeInserted;
+            }
+                return separateChars_Recursive2(originalText, "*", index + 1) +
+                        originalText.substring(index, (index + 1));
+        }
     }
 
         public static void printStringArray (String[]text){
