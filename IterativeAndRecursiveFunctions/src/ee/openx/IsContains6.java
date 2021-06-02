@@ -8,9 +8,9 @@ public class IsContains6 {
         int [] array2 = {1, 4, 0};
         int [] array3 = {6, 0};
 
-        System.out.println(IsContains6_Iterate(array1));
-        System.out.println(IsContains6_Iterate(array2));
-        System.out.println(IsContains6_Iterate(array3));
+        System.out.println(IsContains6_Iterate(array1, 6));
+        System.out.println(IsContains6_Iterate(array2, 6));
+        System.out.println(IsContains6_Iterate(array3, 6));
 
         System.out.println();
 
@@ -19,9 +19,9 @@ public class IsContains6 {
         System.out.println(IsContains6_Recursive(array3,6, 0));
     }
 
-    public static boolean IsContains6_Iterate(int[] numbersArray) {
+    public static boolean IsContains6_Iterate(int[] numbersArray, int number) {
         for (int j : numbersArray) {
-            if (j == 6) {
+            if (j == number) {
                 return true;
             }
         }
@@ -30,7 +30,7 @@ public class IsContains6 {
 
     public static boolean IsContains6_Recursive(int[] numbersArray, int number, int index) {
         if (index < numbersArray.length) {
-            if (numbersArray[index] == 6) {
+            if (numbersArray[index] == number) {
                 return true;
             } else {
                 return IsContains6_Recursive(numbersArray, number, index + 1);
