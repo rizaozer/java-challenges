@@ -1,2 +1,3 @@
 https://www.w3resource.com/java-exercises/basic/index1.php
-https://edabit.com/challenge/3ZtykTsx3GSoPHyBb
+https://edabit.com/challenge/
+https://codingbat.com/
