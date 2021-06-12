@@ -41,6 +41,7 @@ public class Main {
             rev = reverse(rev);
 
             int day = Integer.parseInt(rev.substring(0, 2));
+
             int month = Integer.parseInt(rev.substring(2, 2 + 2));
 
             if (isValidDate(day, month, year)) {

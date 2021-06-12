@@ -1,7 +1,10 @@
-Palindrome Timestamps
-Create a function that takes two times of day (hours, minutes, seconds) and returns the amount of occurences of palendrome timestamps.
+****Palindrome Timestamps****
 
-A palendrome timestamp should be read the same hours : minutes : seconds as seconds : minutes : hours, keeping in mind the second's and hour's digits will reverse. For example, 02 : 11 : 20 is a palendrome timestamp.
+Create a function that takes two times of day (hours, minutes, seconds)
+and returns the amount of occurences of palendrome timestamps.
+
+A palendrome timestamp should be read the same (hours : minutes : seconds as seconds : minutes : hours),
+ keeping in mind the second's and hour's digits will reverse. For example, 02 : 11 : 20 is a palendrome timestamp.
 
 Examples
 palendromeTimestamps(2, 12, 22, 4, 35, 10) ➞ 14
