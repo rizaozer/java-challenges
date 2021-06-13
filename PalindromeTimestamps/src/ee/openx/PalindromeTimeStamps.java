@@ -2,7 +2,7 @@ package ee.openx;
 
 public class PalindromeTimeStamps {
     public static void main(String[] args) {
-        palindromeTimestamps(12, 12, 12, 13, 13, 13);
+        palindromeTimestamps(0,0,0,58,57,23);
     }
 
     public static void palindromeTimestamps(int hour1, int minute1, int second1, int second2, int minute2, int hour2) {
@@ -13,7 +13,7 @@ public class PalindromeTimeStamps {
         while (flag) {
             if(minute1 % 10 == minute1 / 10 && hour1 * 10 == second1 && minute1 != 0 ||
                     hour1 % 10 == second1 / 10 && hour1 / 10 == second1 % 10 && minute1 % 10 == minute1 / 10 && minute1 != 0) {
-                System.out.println(hour1 + " : " + minute1 + " : " + second1);
+                    System.out.println(hour1 + " : " + minute1 + " : " + second1);
                 counter++;
             }
             second1++;
