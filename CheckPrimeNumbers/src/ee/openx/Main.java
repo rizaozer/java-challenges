@@ -3,28 +3,26 @@ package ee.openx;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(isPrimeNumber(20));
+        System.out.println(isPrimeNumber(1000));
     }
 
     public static int isPrimeNumber(int number) {
         int counter = 0;
         if (number > 1) {
             for (int i = 2; i < number; i++) {
-                System.out.println("i= " + i);
-                if(i <= 5 && i % 2 != 0 || i < 5 && i % 3 != 0) {
+                boolean flag = true;
+                for (int j = 2; j <= Math.sqrt(i); j++) {
+                    System.out.println(i + " % " + j);
+                        if (i % j == 0) {
+                            flag = false;
+                            break;
+                        }
+                }
+                if(flag) {
                     counter++;
                 }
-                for (int j = 5; j <= i / 2; j++) {
-                    System.out.println("j= " + j);
-                    System.out.println();
-                    if(i % j != 0) {
-                        System.out.println("yes");
-                        counter++;
-                    }
-                }
             }
-            return counter;
         }
-        return 0;
+        return counter;
     }
 }
