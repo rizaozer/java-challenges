@@ -11,7 +11,7 @@ public class Main {
         for (int i = 0; i < text2.length(); i++) {
             if(i >= text1.length())
                 break;
-            if(Character.isUpperCase(text2.charAt(i))) 
+            if(Character.isUpperCase(text2.charAt(i)))
                 myText = myText + text1.charAt(i);
         }
 
