@@ -1,3 +1,4 @@
 https://www.w3resource.com/java-exercises/basic/index1.php
 https://edabit.com/challenge/
 https://codingbat.com/
+https://www.hackerrank.com/challenges/java
