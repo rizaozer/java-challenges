@@ -4,7 +4,7 @@ A number is said to be Disarium if the sum of its digits raised to their
 
 Create a function that determines whether a number is a Disarium or not.
 
-Examples
+Examples:
 isDisarium(75) ➞ false
 // 7^1 + 5^2 = 7 + 25 = 32
 
